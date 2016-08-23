@@ -1,0 +1,33 @@
+{
+  "name": "hw-13",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sendicott/hw-13.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sendicott/hw-13/issues"
+  },
+  "homepage": "https://github.com/sendicott/hw-13#readme",
+  "dependencies": {
+    "foundation-sites": "^6.2.3",
+    "gulp": "^3.9.1",
+    "gulp-html-lint": "0.0.1"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.13.2",
+    "chalk": "^1.1.3",
+    "gulp-babel": "^6.1.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.7",
+    "gulp-watch": "^4.3.9"
+  }
+}
