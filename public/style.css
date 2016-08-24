@@ -1161,3 +1161,33 @@ button {
     margin-left: 0;
     margin-right: 0;
     float: left; } }
+
+.weekdayBox {
+  width: 100%;
+  float: left;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  border: solid 2px black;
+  height: 150px; }
+  @media screen and (min-width: 40em) {
+    .weekdayBox {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem; } }
+  .weekdayBox:last-child:not(:first-child) {
+    float: right; }
+  @media screen and (min-width: 64em) {
+    .weekdayBox {
+      width: 16.66667%;
+      float: left;
+      padding-left: 0.625rem;
+      padding-right: 0.625rem; } }
+  @media screen and (min-width: 64em) and (min-width: 40em) {
+    .weekdayBox {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem; } }
+  @media screen and (min-width: 64em) {
+      .weekdayBox:last-child:not(:first-child) {
+        float: right; } }
+
+.hidden {
+  display: none; }

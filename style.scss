@@ -3,3 +3,20 @@
 @include foundation-global-styles;
 @include foundation-grid;
 
+.weekdayBox {
+    @include grid-column(12);
+    border: solid 2px black;
+    height: 150px;
+
+    @include breakpoint(large) {
+        @include grid-column(2)
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.thirdSpace {
+    @include grid-column(4);
+}
