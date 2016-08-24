@@ -1162,11 +1162,17 @@ button {
     margin-right: 0;
     float: left; } }
 
+body {
+  background-color: #2e5073; }
+
+h1 {
+  color: white; }
+
 .weatherRow {
   max-width: 75rem;
   margin-left: auto;
   margin-right: auto;
-  margin: 2% 0; }
+  margin: 2% 0 2% 2%; }
   .weatherRow::before, .weatherRow::after {
     content: ' ';
     display: table; }
@@ -1178,7 +1184,9 @@ button {
   float: left;
   padding-left: 0.625rem;
   padding-right: 0.625rem;
-  border: solid 2px black; }
+  border: solid 2px black;
+  background-color: #73512e;
+  color: white; }
   @media screen and (min-width: 40em) {
     .weekDayBox {
       padding-left: 0.9375rem;
@@ -1199,16 +1207,37 @@ button {
       .weekDayBox:last-child:not(:first-child) {
         float: right; } }
 
+.hiddenBox {
+  display: none; }
+  @media screen and (min-width: 64em) {
+    .hiddenBox {
+      width: 16.66667%;
+      float: left;
+      padding-left: 0.625rem;
+      padding-right: 0.625rem;
+      display: block;
+      visibility: hidden; } }
+  @media screen and (min-width: 64em) and (min-width: 40em) {
+    .hiddenBox {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem; } }
+  @media screen and (min-width: 64em) {
+      .hiddenBox:last-child:not(:first-child) {
+        float: right; } }
+
 #hidden {
   visibility: hidden; }
 
 #locationBtn {
-  background-color: #4CAF50;
-  /* Green */
+  background-color: #73512e;
   border: none;
   color: white;
+  font-weight: 900;
   padding: 5px 10px;
   text-align: center;
   text-decoration: none;
   font-size: 16px;
   border-radius: 5px; }
+
+.left {
+  float: left; }

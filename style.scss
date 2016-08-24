@@ -3,19 +3,38 @@
 @include foundation-global-styles;
 @include foundation-grid;
 
+body {
+    background-color: #2e5073;
+}
+
+h1 {
+    color: white;
+}
 
 .weatherRow {
     @include grid-row;
-    margin: 2% 0;
+    margin: 2% 0 2% 2%;
 }
 
 .weekDayBox {
     @include grid-column(10);
     border: solid 2px black;
+    background-color: #73512e;
+    color: white;
 
 
     @include breakpoint(large) {
         @include grid-column(2);
+    }
+}
+
+.hiddenBox {
+    display: none;
+
+    @include breakpoint(large) {
+        @include grid-column(2);
+        display: block;
+        visibility: hidden;
     }
 }
 
@@ -24,12 +43,17 @@
 }
 
 #locationBtn {
-    background-color: #4CAF50; /* Green */
+    background-color: #73512e;
     border: none;
     color: white;
+    font-weight: 900;
     padding: 5px 10px;
     text-align: center;
     text-decoration: none;
     font-size: 16px;
     border-radius: 5px;
+}
+
+.left {
+    float: left;
 }

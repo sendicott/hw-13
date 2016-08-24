@@ -29,6 +29,7 @@ function weekdayForecast(city, stateAbbr) {
         for (let i = 0; i < 40; i = i + 8) {
             let weekDayBox = document.createElement('div');
             weekDayBox.classList.add("weekDayBox");
+            weekDayBox.classList.add("left");
             parent.appendChild(weekDayBox);
 
             let weekday = document.createElement('h2');
@@ -51,6 +52,9 @@ function weekdayForecast(city, stateAbbr) {
             conditions.textContent = "Weather Conditions: " + response.list[i].weather[0].description + " with a wind speed of " + response.list[i].wind.speed + "mph.";
             weekDayBox.appendChild(conditions);
         }
+        let weekDayBlank = document.createElement('div');
+        weekDayBlank.classList.add("hiddenBox");
+        parent.appendChild(weekDayBlank);
     });
     request.send();
 }
