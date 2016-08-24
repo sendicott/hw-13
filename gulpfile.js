@@ -3,7 +3,8 @@
 let gulp = require('gulp');
 let uglify = require('gulp-uglify');
 let watch = require('gulp-watch');
-let htmlLint = require('gulp-html-lint');
+// let htmlLint = require('gulp-html-lint');
+let htmlhint = require('gulp-htmlhint');
 let babel = require('gulp-babel');
 let sass = require('gulp-sass');
 
@@ -11,9 +12,10 @@ gulp.task('default', ['html', 'css', 'js']);
 
 gulp.task('html', function() {
     return gulp.src('index.html')
-        .pipe(htmlLint())
-        .pipe(htmlLint.format())
-        .pipe(htmlLint.failOnError())
+        .pipe(htmlhint())
+        // .pipe(htmlLint())
+        // .pipe(htmlLint.format())
+        // .pipe(htmlLint.failOnError())
         .pipe(gulp.dest('public/'));
 });
 

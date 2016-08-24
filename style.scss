@@ -3,20 +3,33 @@
 @include foundation-global-styles;
 @include foundation-grid;
 
-.weekdayBox {
-    @include grid-column(12);
+
+.weatherRow {
+    @include grid-row;
+    margin: 2% 0;
+}
+
+.weekDayBox {
+    @include grid-column(10);
     border: solid 2px black;
-    height: 150px;
+
 
     @include breakpoint(large) {
-        @include grid-column(2)
+        @include grid-column(2);
     }
 }
 
-.hidden {
-    display: none;
+#hidden {
+    visibility: hidden;
 }
 
-.thirdSpace {
-    @include grid-column(4);
+#locationBtn {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
 }

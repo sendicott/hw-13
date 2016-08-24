@@ -1162,32 +1162,53 @@ button {
     margin-right: 0;
     float: left; } }
 
-.weekdayBox {
-  width: 100%;
+.weatherRow {
+  max-width: 75rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 2% 0; }
+  .weatherRow::before, .weatherRow::after {
+    content: ' ';
+    display: table; }
+  .weatherRow::after {
+    clear: both; }
+
+.weekDayBox {
+  width: 83.33333%;
   float: left;
   padding-left: 0.625rem;
   padding-right: 0.625rem;
-  border: solid 2px black;
-  height: 150px; }
+  border: solid 2px black; }
   @media screen and (min-width: 40em) {
-    .weekdayBox {
+    .weekDayBox {
       padding-left: 0.9375rem;
       padding-right: 0.9375rem; } }
-  .weekdayBox:last-child:not(:first-child) {
+  .weekDayBox:last-child:not(:first-child) {
     float: right; }
   @media screen and (min-width: 64em) {
-    .weekdayBox {
+    .weekDayBox {
       width: 16.66667%;
       float: left;
       padding-left: 0.625rem;
       padding-right: 0.625rem; } }
   @media screen and (min-width: 64em) and (min-width: 40em) {
-    .weekdayBox {
+    .weekDayBox {
       padding-left: 0.9375rem;
       padding-right: 0.9375rem; } }
   @media screen and (min-width: 64em) {
-      .weekdayBox:last-child:not(:first-child) {
+      .weekDayBox:last-child:not(:first-child) {
         float: right; } }
 
-.hidden {
-  display: none; }
+#hidden {
+  visibility: hidden; }
+
+#locationBtn {
+  background-color: #4CAF50;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px; }
